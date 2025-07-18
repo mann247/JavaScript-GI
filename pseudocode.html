@@ -1,6 +1,4 @@
-<!--
-
-Create a Rock, Paper, Scissors game.
+<!-- Create a Rock, Paper, Scissors game.
 
 What to use?
     - HTML (Should be a very simple code)
@@ -10,16 +8,53 @@ What to use?
 Game should have the following: 
     1. User Interface
         a. User can enter rock, paper, or scissors
+        What will this look like?
+        - button on the bottom of the page
+        - user can choose which button to select
+        - once it's selected, then the cpu will choose an different/same image.
+
+        - prompt user to choose rock, paper, or scissors
+            - can be done with a label
+
     2. Needs Validation
+         - when the user clicks rock/paper/scissor button image... then...
+         it needs to be store in a variable in javascript
+
     3. Create an "NPC" >> (figure out how to create a CPU player)
+        - needs to be a function for the NPC
+        - needs to generate either a rock/paper/scissors image
+        - needs to be stored in a variable in javascript
     4. Winner Comparison
         a. If... Then... Else??
+
+            - If user chooses rock 
+                if npc chooses rock ... tie
+                else if npc chooses paper... player loses
+                else if npc chooses scissors... player wins
+
+             - If user chooses (insert option here. )
+                if npc chooses rock ... tie
+                else if npc chooses paper... player loses
+                else if npc chooses scissors... player wins
+
+                **nested if statement syntax**
+                if (choice = rock){
+                    if (npc-choice = paper){
+                        console.log('You lose!')
+                }
+
     5. Game Results Message.
         a. console log?
-
+        b. an alert?
 
 To get a 4...
     1. Score Counter
         a. Three separate ones: Wins, Losses, and Ties
+            - variable to track the user and cpu score
+
     2. A Reset Button
+        a. clears the score
+        b. allows the user to restart the game
+
+    ***project needs 4 variables, update depending on what the user clicks**
 -->
