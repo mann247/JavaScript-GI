@@ -63,28 +63,3 @@ document.getElementById("reset-btn").addEventListener("click", function() {
     document.getElementById("tieScore").textContent = 0;
     document.getElementById("resultDisplay").textContent = " ";
 });
-
-//Attempt 1 @ reset button
-// //function resetGame(){
-//     pScore = 0;
-//     cScore = 0;
-//     tScore = 0;
-
-//     document.getElementById("pScore").innerHTML = pScore;
-//     document.getElementById("cScore").innerHTML = cScore;
-//     document.getElementById("tScore").innerHTML = tScore;
-
-//     document.getElementById("playerPick").innerHTML = " ";
-//     document.getElementById("cpuPick").innerHTML = " ";
-//
-
-//Attempt 2 @ reset button
-/* const reset = () => {
-    pScore = 0;
-    cScore = 0;
-    tScore = 0;
-
-    document.querySelector(#pScore).innerHTML = pScore;
-    document.querySelector(#cScore).innerHTML = cScoreScore;
-    document.querySelector(#tScore).innerHTML = tScoreScore;
-} */
