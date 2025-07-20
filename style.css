@@ -13,31 +13,24 @@ body{
 }
 .score{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5em;
-    margin-bottom: 30px;
+    gap: 7em;
+    margin-bottom: 50px;
     text-align: center;
 }
 h1{
     font-size: 4.5rem;
     color: rgb(67, 29, 29);
-    word-spacing: 1.5em;
+    word-spacing: 2em;
 }
 .user-pick{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
     margin-bottom: 50px;
 }.user-pick > button{
     border: none;
     background-color: rgb(254, 240, 239);
-    margin: 0 40px;
+    margin: 0 50px;
     cursor: pointer;
-}.user-pick . button img{
-    max-width: 80px;
-    height: auto;
 }
 .user-pick > button:hover{
     opacity: 55%;
@@ -74,13 +67,30 @@ h1{
     src: url(fonts/slkscre.ttf);
 }
 
-@media (max-width: 600px){
-    .user-pick > button img{
-        max-width: 60px;
+@media (min-width:320px) and (max-width: 600px){
+    .user-pick > button{
+        display: flex;
+    }
+     .user-pick img{
+        height: 80px;
+     }
+     .user-pick{
+        gap: 20px;
+        flex-wrap: wrap;
+     }
+}
+
+@media (min-width: 601px) and (max-width: 1368px){
+    .user-pick img{
+        height: 120px;
+    }
+    .user-pick{
+        gap: 40px;
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 1368px){
+@media (max-width: 1369px){
     body{
         padding: 15px;
     }
@@ -94,15 +104,24 @@ h1{
         text-align: center;
         font-size: 3rem;
     }
+    .user-pick{
+        gap: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .user-pick img{
+        height: 200px;
+        width: auto;
+    }
     #playerDisplay, #cpuDisplay{
         font-size: 2rem;
         flex-direction: column;
         align-items: center;
     }
     #resultDisplay{
-        font-size: 3rem;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        font-size: 3rem;
     }
     #reset-btn{
         font-size: 1rem;
