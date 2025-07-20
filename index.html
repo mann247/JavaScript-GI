@@ -1,17 +1,46 @@
 <!-- Nia Manning
  Guided Inquiry: JavaScript
- 7-20-2024-->
- 
+ 7-20-2025-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" href="style.css">
-    <title>Manning: Guided Inquiry - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Manning: RPS</title>
 </head>
-<body>
 
-    
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- Score Counter-->
+     <div class="score">
+       <div id= "pScore"> Your Score: <!-- wins-->
+            <span id = "playerScore">0</span>
+        </div>
+        <div id= "cScore"> CPU Score: <!-- loses-->
+            <span id = "cpuScore">0</span>
+        </div>
+        <div id= "tScore"> Tied Games: <!-- ties-->
+            <span id = "tieScore">0</span>
+        </div>
+     </div>
+
+    <!-- rock, paper, scissors-->
+        <div class="user-pick">
+            <button onclick="play('Rock')"><img src = "images/rock.jpg" alt="rock fist"></button> <!--Rock Button-->
+            <button onclick="play('Paper')"><img src = "images/paper.jpg" alt="open palm"></button> <!--Paper Button-->
+            <button onclick="play('Scissors')"><img src = "images/scissors.jpg" alt="peace sign"></button> <!--Scissors Button-->
+        </div>
+        
+        <div id = "playerDisplay"> You: </div> <!--user choice display-->
+        <div id = "cpuDisplay"> CPU: </div> <!--npc random choice display-->
+        <div id = "resultDisplay"> </div> <!--result display-->
+
+    <!-- reset button to reload the game-->
+        <button id="reset-btn" onclick="resetGame()"> Reset Game</button>
+
+<script src="game.js"></script>
 </body>
 </html>

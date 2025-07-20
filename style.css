@@ -1,1 +1,111 @@
-/*button images*/
+/*Nia Manning
+ Guided Inquiry: JavaScript
+ 7-20-2025*/
+body{
+    font-family:pixel;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(254, 240, 239);
+    color:rgb(67, 29, 29);
+}
+.score{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h1{
+    font-size: 4.5rem;
+    color: rgb(67, 29, 29);
+    word-spacing: 1.5em;
+}
+.user-pick{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}.user-pick > button{
+    border: none;
+    background-color: rgb(254, 240, 239);
+    margin: 0 40px;
+    cursor: pointer;
+}.user-pick . button img{
+    max-width: 80px;
+    height: auto;
+}
+.user-pick > button:hover{
+    opacity: 55%;
+}
+
+#playerDisplay, #cpuDisplay{
+    font-size: 3.5rem;
+}
+#resultDisplay{
+    font-size: 6rem;
+    margin: 40px 0;
+}
+
+#pScore, #cScore, #tScore{
+    font-size: 2.5rem;
+}
+
+#reset-btn{
+    font-family: pixel;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: rgb(233, 134, 89);
+    color: rgb(67, 29, 29);
+    border-color: rgb(233, 134, 89);
+    border-style: dashed;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(fonts/slkscre.ttf);
+}
+
+@media (max-width: 600px){
+    .user-pick > button img{
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 1368px){
+    body{
+        padding: 15px;
+    }
+    .score{
+        flex-direction: column;
+        align-items: center;
+        font-size: .2rem;
+    }
+    h1{
+        flex-direction: column;
+        text-align: center;
+        font-size: 3rem;
+    }
+    #playerDisplay, #cpuDisplay{
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    #resultDisplay{
+        font-size: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    #reset-btn{
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}

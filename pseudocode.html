@@ -1,4 +1,6 @@
-<!-- Create a Rock, Paper, Scissors game.
+<!-- 
+ Updated : 7-20-25
+Create a Rock, Paper, Scissors game.
 
 What to use?
     - HTML (Should be a very simple code)
@@ -9,12 +11,14 @@ Game should have the following:
     1. User Interface
         a. User can enter rock, paper, or scissors
         What will this look like?
-        - button on the bottom of the page
-        - user can choose which button to select
-        - once it's selected, then the cpu will choose an different/same image.
+        - reset button on the bottom of the page
+        - user can choose which hand to select
+        - once it's selected, then the cpu will "choose" a different image. >> changed: generates text instead.
+        - buttons do not have to be images, can be text (7-19-2025)
 
         - prompt user to choose rock, paper, or scissors
             - can be done with a label
+            - done with button images
 
     2. Needs Validation
          - when the user clicks rock/paper/scissor button image... then...
@@ -22,17 +26,13 @@ Game should have the following:
 
     3. Create an "NPC" >> (figure out how to create a CPU player)
         - needs to be a function for the NPC
-        - needs to generate either a rock/paper/scissors image
+        - needs to generate either a rock/paper/scissors image >> changed: generates text instead.
         - needs to be stored in a variable in javascript
+
     4. Winner Comparison
-        a. If... Then... Else??
+        a. If... Else??
 
             - If user chooses rock 
-                if npc chooses rock ... tie
-                else if npc chooses paper... player loses
-                else if npc chooses scissors... player wins
-
-             - If user chooses (insert option here. )
                 if npc chooses rock ... tie
                 else if npc chooses paper... player loses
                 else if npc chooses scissors... player wins
@@ -40,21 +40,26 @@ Game should have the following:
                 **nested if statement syntax**
                 if (choice = rock){
                     if (npc-choice = paper){
-                        console.log('You lose!')
+                        result('You lose!')
                 }
+        b. what about a switch statement? (7-19-25)
 
     5. Game Results Message.
         a. console log?
-        b. an alert?
+        b. an alert? 
+        c. display on the screen?
 
 To get a 4...
     1. Score Counter
-        a. Three separate ones: Wins, Losses, and Ties
-            - variable to track the user and cpu score
+        a. Three separate ones: Wins, Losses, Ties
+            - variable to track the user, cpu, and tied scores
 
     2. A Reset Button
         a. clears the score
-        b. allows the user to restart the game
+        b. clears the text
+        c. allows the user to restart the game
 
-    ***project needs 4 variables, update depending on what the user clicks**
+    3. Can this page be responsive?
+
+    ***project needs 4 variables, update depending on what the user clicks** >> update: project ended up having more than 4 variables.
 -->
