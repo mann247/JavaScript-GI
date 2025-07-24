@@ -58,6 +58,9 @@ function play(playerPick){
 
 //Attempt 3 @ reset button
 document.getElementById("reset-btn").addEventListener("click", function() {
+    pScore = 0;
+    cScore = 0;
+    tScore = 0;
     document.getElementById("playerScore").textContent = 0;
     document.getElementById("cpuScore").textContent = 0;
     document.getElementById("tieScore").textContent = 0;
